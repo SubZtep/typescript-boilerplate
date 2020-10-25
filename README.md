@@ -1,13 +1,14 @@
 # :hotsprings::registered::spaghetti:
 
-> :shipit:
+> :shipit: **change me** :speech_balloon: _check license_ :thought_balloon:
 
 ## :point_up_2: :heavy_plus_sign: :running:
 
-- TypeScript :heavy_check_mark:
+- GithHub Workflow Test :heavy_check_mark:
+- TypeScript via Babel :heavy_check_mark:
+- Nollup dev serve:heavy_check_mark:
 - Prettier :heavy_check_mark:
 - Rollup :heavy_check_mark:
-- Nollup :heavy_check_mark:
 - ESLint :heavy_check_mark:
 - Babel :heavy_check_mark:
 - Npm :heavy_check_mark:
