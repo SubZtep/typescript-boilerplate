@@ -6,8 +6,8 @@
 
 - GithHub Workflow Test :heavy_check_mark:
 - TypeScript via Babel :heavy_check_mark:
-- Nollup dev serve:heavy_check_mark:
-- Rollup bundle:heavy_check_mark:
+- Nollup dev serve :heavy_check_mark:
+- Rollup bundle :heavy_check_mark:
 - Prettier :heavy_check_mark:
 - ESLint :heavy_check_mark:
 - Babel :heavy_check_mark:
@@ -30,7 +30,7 @@
 2. Create your repository from this template.
 3. Clone locally and **perceive everything**.
 4. `$ git remote add template git@github.com:SubZtep/typescript-boilerplate.git`
-5. Run `$ git fetch template` regularly to pull template updates for the good.
+5. Run `$ git fetch template`, `$ git pull template main --allow-unrelated-histories`regularly to pull template updates for the good.
 6. `npm i`
 7. `npm run dev` :monkey:
 
