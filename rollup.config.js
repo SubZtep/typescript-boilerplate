@@ -4,6 +4,8 @@ import resolve from "@rollup/plugin-node-resolve"
 import commonjs from "@rollup/plugin-commonjs"
 import replace from "@rollup/plugin-replace"
 import strip from "@rollup/plugin-strip"
+import html from "@open-wc/rollup-plugin-html"
+import pug from "pug"
 
 const isProd = process.env.NODE_ENV === "production"
 const extensions = [".js", ".ts"]
@@ -16,6 +18,17 @@ const plugins = [
     include: ["src/**/*"],
   }),
   commonjs(),
+  html({
+    inject: false,
+    template: ({ bundle }) =>
+      pug
+        .compileFile("pug/template.pug", { pretty: !isProd })()
+        .replace(
+          "<!-- bundle-->",
+          bundle.entrypoints.map(({ importPath }) => `<script type="module" src="${importPath}"></script>`)
+        ),
+    minify: isProd,
+  }),
 ]
 
 const output = {
