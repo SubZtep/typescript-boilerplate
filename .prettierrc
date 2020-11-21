@@ -1,5 +1,8 @@
 {
   "semi": false,
   "printWidth": 120,
-  "arrowParens": "avoid"
+  "arrowParens": "avoid",
+  "pugEmptyAttributes": "none",
+  "pugAttributeSeparator": "none",
+  "pugClosingBracketPosition": "new-line"
 }
